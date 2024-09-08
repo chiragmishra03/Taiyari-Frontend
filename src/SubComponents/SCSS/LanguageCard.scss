@@ -1,0 +1,53 @@
+.language-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 240px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.login-button {
+  margin: 0;
+}
+
+.language-card-bottom {
+  background-color: rgb(8, 0, 31);
+  width: 100%;
+  margin-top: 10px;
+  height: 80%;
+
+  .language-card-title {
+    color: white;
+    font-size: 32px;
+  }
+}
+
+.language-card-image {
+  padding: 20px;
+  height: 40%;
+  width: 40%;
+  border-radius: 4px;
+}
+
+.language-card-title {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.language-card-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px; /* Space before the button */
+  overflow: hidden; /* Ensure no overflow */
+  text-overflow: ellipsis; /* Use ellipsis for overflowed text */
+  white-space: nowrap; /* Prevent text wrapping */
+}

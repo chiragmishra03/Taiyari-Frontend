@@ -1,0 +1,61 @@
+/* Variables for reusability */
+$primary-color: #007bff;
+$input-border-color: #ccc;
+$hover-color: darken($primary-color, 10%);
+$input-focus-color: lighten($primary-color, 20%);
+
+/* Overall container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form styling */
+.login-form {
+  text-align: left;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .login-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+
+    .input-label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid $input-border-color;
+      border-radius: 4px;
+
+      &:focus {
+        border-color: $input-focus-color;
+        outline: none;
+      }
+    }
+  }
+}
